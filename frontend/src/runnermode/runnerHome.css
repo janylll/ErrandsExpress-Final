@@ -1,0 +1,11 @@
+.rhtitle{
+  font-family: "Montserrat";
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  background: grey;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+}

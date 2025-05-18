@@ -1,0 +1,172 @@
+.modal-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-box2 {
+  background: white;
+  width: 800px;
+  max-width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  padding: 0;
+  position: relative;
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 1px solid #c6c1c1e2;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.Createpost {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  flex: 1;
+  margin-left: 5%;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: none;
+  border: none;
+  margin-top: 6px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.user-info p {
+  margin: 0;
+  font-weight: 600;
+  color: rgb(33, 33, 80);
+}
+
+.profile-circle {
+  background-color: gold;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: rgb(29, 29, 89);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textarea-right {
+  flex: 2;
+  
+}
+
+.textarea-right label {
+  font-weight: 600;
+  color: darkblue;
+  margin-bottom: 9px;
+  display: block;
+  font-size: 14px;
+}
+.textarea-right textarea {
+  font-family: "Montserrat";
+  width: 470px;
+  height: 255px;
+  resize: none;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid darkblue;
+  box-sizing: border-box;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  border-top: 1px solid #ccc;
+}
+
+.icons button {
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;  
+}
+
+.submit-btn {
+  font-family: 'Montserrat';
+  background:  rgb(33, 33, 80);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color:  rgb(33, 33, 80);
+}

@@ -1,0 +1,136 @@
+.Lheader {
+    background: linear-gradient(150deg, rgb(0, 0, 138), rgb(236, 186, 49));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Remove padding here */
+    /* padding: 0 2%; */
+    flex-wrap: wrap;
+    margin: 0; 
+    width: 100vw; 
+    box-sizing: border-box;
+    position: fixed; /* optional: keep header on top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Add padding inside the logo container and nav */
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 2%;  /* add padding here */
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;  /* add padding here */
+}
+
+.header-logo {
+    width: 70px;
+    height: auto;
+    margin-top: 12px;
+    margin-right: 20px; /* space between logo and text */
+    margin-left: 0; /* reset previous left margin */
+}
+
+.logo {
+  font-family: "Unbounded";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 2px; 
+  background: linear-gradient(to right, rgb(236, 186, 49), #fff8dc); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 12px;
+  padding: 10px 0;
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: darkblue;
+}
+
+hr {
+    border: none;
+    height: 2%;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Burger Menu Icon */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px; /* below header */
+    right: 0;
+    background: rgb(0, 0, 138);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 200px;
+    display: none;
+    border-radius: 0 0 0 10px;
+  }
+
+  .nav.open .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav {
+    flex: none;
+  }
+}
+
+

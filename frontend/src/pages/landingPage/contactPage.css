@@ -1,0 +1,124 @@
+.contact-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 0; /* Removed margin that causes scroll */
+  overflow: hidden; /* Prevent scroll */
+}
+
+#contact {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.title2 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, darkblue, rgb(236, 186, 49));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.card-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical alignment */
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(to top, rgb(236, 186, 49), darkblue) border-box;
+  border: 5px solid transparent;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(to top, darkblue, rgb(236, 186, 49));
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 10px 0 5px;
+  background: linear-gradient(to right, darkblue, rgb(236, 186, 49));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-mail,
+.card-phone {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 4px 0;
+  background: linear-gradient(to right, darkblue, rgb(236, 186, 49));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.role-tag {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 12px;
+  background:rgb(5, 5, 71);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ensure footer always visible */
+footer {
+  margin-top: auto;
+}

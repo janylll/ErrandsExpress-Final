@@ -1,0 +1,71 @@
+/* Ensure page uses full viewport height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: #f5f7fa;
+}
+
+/* Container for the whole page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Let the main content take up the remaining space */
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+/* Description text */
+.description {
+  font-weight: bold;
+  word-spacing: 5px;
+  font-size: 32px;
+  background: linear-gradient(150deg, darkblue, gold);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  animation: textPop 1.2s ease-in-out both;
+  transition: transform 0.3s ease;
+}
+
+.description:hover {
+  transform: scale(1.01);
+}
+
+/* Fade-in from bottom animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle text animation */
+@keyframes textPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
