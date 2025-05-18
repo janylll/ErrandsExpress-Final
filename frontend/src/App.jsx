@@ -13,7 +13,6 @@ import RunnerHome from './runnermode/runnerHome';
 import Runnerlayout from './components/runnercoms/runnerlayout';
 import RunnerInbox from './runnermode/runnerInbox';
 import RunnerNotification from './runnermode/runnerNotification';
-
 function App() {
   return (
     <Routes>

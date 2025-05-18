@@ -1,0 +1,179 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.feedback-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 0;
+}
+
+.feedback-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  background-color: #fefefe;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  animation: fadeInScale 0.8s ease;
+}
+
+.form-section,
+.list-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 500px;
+  animation: slideUp 1s ease;
+}
+
+.feedback-title {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(150deg, darkblue, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  font-family: "Montserrat";
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: darkblue;
+  outline: none;
+}
+
+.feedback-form button {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: bold;
+  background: rgb(29, 29, 89);
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background: linear-gradient(150deg, darkblue, gold);
+  color: white;
+}
+
+.feedback-form button:active {
+  transform: scale(0.97);
+}
+
+.feedback-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.feedback-item {
+  background: white;
+  border-left: 4px solid darkblue;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 30, 0.1);
+  opacity: 0;
+  animation: fadeInItem 0.6s forwards;
+}
+
+.feedback-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.feedback-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.feedback-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.feedback-item h4 {
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: darkblue;
+}
+
+.feedback-item p {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.email {
+  font-size: 13px;
+  color: gray;
+}
+
+.no-feedback {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInItem {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
